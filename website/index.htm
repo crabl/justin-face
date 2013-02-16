@@ -58,6 +58,12 @@
 	body {
 		background: url("img/tiny_grid.png");
 	}
+	
+	footer {
+	margin: 30px 0;
+	padding: 10px;
+	}
+
 </style>
 
 </head>
@@ -88,7 +94,7 @@
             	<li><a href="http://wiki.blender.org/index.php/Doc:2.6/Tutorials" target="_blank">The Blender Wiki &amp; Tutorials</a></li>
                 <li><a href="http://www.youtube.com/watch?v=86JiuZpbi_w" target="_blank">Modeling the Human Head Made Easy</a> by Josh Alger on YouTube</li>
                 <li><a href="http://www.cgcookie.com/blender/2010/01/28/topology-overview-the-head/" target="_blank">The Topology of the Human Head</a> by Jonathan Williamson from
-                	<a href="http://www.cgcookie.com/">CGCookie.com</a></li>
+                	<a href="http://www.cgcookie.com/" target="_blank">CGCookie.com</a></li>
             </ul>
         </article>
         
@@ -111,7 +117,7 @@
         </article>
         
         <article class="span4">
-        	<h2>Challenges</h2>
+	  <h2>Blender Challenges</h2>
             <p>In the beginning, my biggest challenge was getting re-acquainted with Blender, as well as with 3D modeling.
             It is a completely different process from the 2D design that I am used to, so an adjustment period was necessary.
             I started out by watching various tutorials and capturing the reference images, and then proceeded to start modeling</p>
@@ -135,11 +141,40 @@
                         <img src="images/large/2.png" alt="image02" title="2. Mouth Loops" data-thumb="images/thumbs/2.jpg"/>
                         <img src="images/large/3.png" alt="image03" title="3. Loop Extrusion" data-thumb="images/thumbs/3.jpg"/>
                         <img src="images/large/4.png" alt="image04" title="4. Rough Mask" data-thumb="images/thumbs/4.jpg"/>
-                        <img src="images/large/5.png" alt="image05" title="5. Mask &amp; Image" data-thumb="images/thumbs/4.jpg"/>
-                        <img src="images/large/6.png" alt="image06" title="6. Subsurface Modifier" data-thumb="images/thumbs/4.jpg"/>
+                        <img src="images/large/5.png" alt="image05" title="5. Mask &amp; Image" data-thumb="images/thumbs/5.jpg"/>
+                        <img src="images/large/6.png" alt="image06" title="6. Subsurface Modifier" data-thumb="images/thumbs/6.jpg"/>
+			<img src="images/large/7.png" alt="image07" title="7. Side Mesh View" data-thumb="images/thumbs/7.jpg" />
+			<img src="images/large/8.png" alt="image08" title="8. Full Head Done" data-thumb="images/thumbs/8.jpg" />
+			<img src="images/large/9.png" alt="image09" title="9. Texture Mapping" data-thumb="images/thumbs/9.jpg" />
                     </div><!-- cn-images -->
                 </div><!-- cn-slideshow -->
         </article>
+    </section>
+
+    <section class="row">
+      <article class="span6">
+	<h2>Modeling Challenges</h2>
+	<p>This head was modeled gradually over the course of two weeks, working for at least an hour every day. Most of that time was not spent modeling,
+	  however, as I was learning the ins and outs of Blender as I went along, dealing with its great many quirks. In the end, I feel like I have not even
+	  scratched the surface of learning this massive application. It was very daunting to start a project without any idea of how to complete it. In the
+	  end, the result is mostly what I expected, but with a few minor differences.</p>
+	<p><strong>What did I learn from this?</strong> First of all, I learned that modeling a human head to any degree of accuracy in Blender (or any other
+	  3D package for that matter) is definitely a non-trivial task. It is very tedious process, and I would not recommend a project of this scale for
+	  someone whose last 3D modeling experience was with Play-Doh in kindergarten.</p> <p>Second, the tedium is not nearly as bad as the frustration that one will certainly experience while using Blender: there is a shortcut key for <strong>absolutely everything</strong> which requires a great deal of
+	  memorization and retraining one's brain. For instance, the shortcut key to pan around an image in Photoshop is "H". In Blender, this hides the 
+	  currently selected object or face. For someone who is used to working in Photoshop a lot, this behavior and its solution (use Middle Mouse Button
+	  + Shift to pan, <em>obviously...</em>) is very frustrating.</p>
+	<p>Third, the documentation that is available (or not, as the case may be) for Blender is either incomplete, outdated, or non-existent. To learn how \
+to perform even basic tasks such as create an edge between two vertices (requires the creation of two faces...) is very tough to find. </p>
+	</article>
+      
+      <article class="span6">
+	<h2>&nbsp;</h2>
+	<p>Finally, in order to have a chance at printing a 3D model of the head, I opted not to model the ears of my subject. Doing so would have required the addition of myriad support structures, which I neither had the time nor the inclination to include. The final product looks something akin to a character from the Sims, except far more terrifying.</p>
+	<p>Overall, creating this model was about a hundred thousand times harder to create than a good-looking website through which to present it (many thanks to the developers of <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>). I have gained a new appreciation for 3D animators and the incomprehensibly massive amount of artistic ability and talent that they require to do their jobs. As for my career at Pixar, I think I'll stick to Play-Doh.<br /><br /></p>
+	<img src="images/playdoh.jpg" alt="My 3D modeling tool" />
+	<p class="muted credit"><br />Photo Credit: <a href="http://www.flickr.com/photos/hsing/8439431387/in/photostream/" target="_blank">Hsing Wei</a></p>
+      </article>
     </section>
     
     <section class="row">
@@ -150,9 +185,13 @@
         <article class="span4">
         	<h2>Downloads</h2>
             <p>I have released the Blender model on Github, which includes the reference images, screenshots, and other assets.</p>
-            <p><a class="btn btn-primary btn-large" href="http://github.com/crabl/justin-face/">Download from Github</a></p>
+            <p><a class="btn btn-primary btn-large" href="http://github.com/crabl/justin-face/" target="_blank">Download from Github</a></p><br />
         </article>
     </section>
+
+    <footer class="footer">
+      <p class="muted credit" align="center">Copyright &copy; 2013 Christopher Rabl</p>
+    </footer>
 
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
